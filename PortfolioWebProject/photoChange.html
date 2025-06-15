@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Junayed Tilock CV">
+  <meta name="keywords" content="Resume, CV, portfolio">
+  <meta name="author" content="Junayed Tilock CV">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Junayed Tilock </title>
+    <link rel="stylesheet" href="css\styles_CA6.css">
+	<link rel="stylesheet" href="css\menubar.css">
+	<style>
+		#myInfo{
+		width: 100%;
+		padding: 50px 0;
+		text-align: center;
+		background-color: lightblue;
+		margin-top: 20px;
+	}
+
+	</style>
+</head>
+<body>
+    <div id="container">
+        <header role="banner">
+            <h1 style="padding-top: 40px;">Junayed Tilock</h1>
+        </header>
+        <nav role="navigation">
+            <ul style="margin-top: 30px;">
+                <li><a class="button" href="index.html">Home</a></li> <br><br>
+                <li><a class="button" href="resume.html">Experience</a></li> <br><br>
+				<li><a id="class="dropdown"" class="button" href="professionalSkill.html">Professional Skill</a>
+					
+				
+				</li> <br>
+				<li><a class="button" href="web_skills.html">Hobbies</a></li> <br>
+                
+				<a href="index.html">
+					<img src="image/logo.png" width="50" height="50" alt="logo" style="display: block;margin: 0 auto;">
+				</a>
+            </ul>
+            
+       </nav>
+       <aside role="complementary">
+            <h3>Enter Something:</h3>
+            Will enter something in near future
+        </aside>
+       <main role="main" id="content">
+	   <h3 id="mideaEffect">Media Effects</h3>
+		<p>
+			<strong>According to Yick & Gupta</strong> "wearing a white ribbon in one's hair is considered bad luck" for	Chinese people. 
+			Therefore I changed photo of girl with white ribbon to one with a red ribbon. 
+		</p>
+			<button onclick="myInfo()">Show/Hide info</button>
+			
+			<div id="myInfo">
+				Yick, A.G. and Gupta, R., 2002. "Chinese Cultural Dimensions of Death, Dying, and Bereavement: Focus 
+				Group Findings", Journal of Cultural Diversity, Vol. 9, No. 1, pp.32-42.
+			</div>
+			
+			<button onclick="document.getElementById('myImage').src='image/red.webp'">Change Ribbon Color Red	</button>
+
+			<img id="myImage" src="image/white.webp" style="width:100px">
+			<button onclick="document.getElementById('myImage').src='image/white.webp'">Change Ribbon Color White
+			</button>	
+            <footer role="contentinfo"> Copyright &copy; 2022 Junayed Tilock
+                <br>
+                <h2>Contact:</h2>
+                Email: <a href="mailto:junayed@yahoo.com">Junayed@yahoo.com</a><br>
+                Phone: 0181716151<br>
+                Linkedin: <a href="https://www.linkedin.com/in/junayed-tilock-7ab496176">Junayed Tilock</a>
+            </footer>
+        </main>
+    </div>
+	
+	<script> 
+		function myInfo() {
+		var x = document.getElementById("myInfo");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		}else {
+			x.style.display = "none";
+		}
+	}
+	
+		document.getElementById("mideaEffect").addEventListener("mouseover", mouseOver);
+		document.getElementById("mideaEffect").addEventListener("mouseout", mouseOut);
+
+		function mouseOver() {
+			document.getElementById("mideaEffect").style.color = "red";
+		}
+
+		function mouseOut() {
+			document.getElementById("mideaEffect").style.color = "black";
+		}
+	</script>
+</body>
+</html>

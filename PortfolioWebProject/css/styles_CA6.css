@@ -1,0 +1,127 @@
+header, nav, main, footer, aside { display: block; }
+
+* { box-sizing: border-box;}
+
+body { 
+    margin-top:0px;
+    background-color: #ffffff;
+}
+
+#container { 
+    /* background-color: #eeeeee; */
+    color: #006600;
+    min-width: 960px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    background-image: url('../image/image\ 2.jpeg');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 120px;
+    color: rgb(1, 1, 36);
+    text-align: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #000000; 
+}
+
+header h1 {
+    margin: 0;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 0.7em;
+    color: #ffffff;
+    background-color: #69859a;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:link {
+    color: #ffffff;
+}
+
+.button:hover {
+    color: #965251;
+    background-color: #f7dee1;
+}
+
+
+aside { 
+    float: right;
+    width: 25%;
+    font-size: 0.8em; 
+}
+
+main { 
+    margin: 0 20% 0 20%;
+    padding: 1px 10px 20px 10px;
+    background-color: #ffffff;
+    color: #006600;
+    font-size: 0.8em; 
+}
+
+table {
+    position: relative;
+    margin-top: 35px;
+    left: 15%;
+    border: 5px solid #000066;
+    width: 600px;
+}
+
+th, td {
+    border: 1px solid #000066;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+tr:nth-of-type(even) {
+    background-color: #eaeaea;
+}
+
+tr:first-of-type {
+    background-color: #006;
+    color: #eaeaea;
+}
+
+footer { 
+    font-size: .70em;
+    text-align: center;
+    color: #006600;
+    background-color: #ffffff;
+    padding-top: 10px;
+    clear: both; 
+}
+
+@media print {
+    body {
+        background-color: #ffffff;
+        background-image: none;
+    }
+    nav { display: none; }
+    main { 
+        margin: 0 210px 0 160px;
+        padding: 1px 10px 20px 10px;
+        background-color: #ffffff;
+        color: #0e0f0e;
+        font-size: 1.2em; 
+    }
+    .slide {
+        display: none;
+    }
+    aside { 
+        font-size: 1.2em; 
+    }
+}

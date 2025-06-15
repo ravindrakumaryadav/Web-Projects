@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Junayed Tilock CV">
+  <meta name="keywords" content="Resume, CV, portfolio">
+  <meta name="author" content="Junayed Tilock CV">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Junayed Tilock </title>
+    <link rel="stylesheet" href="css\styles_CA6.css">
+	<link rel="stylesheet" href="css\menubar.css">
+	<link rel="stylesheet" href="css\form.css">
+	<script src="js\validation.js"></script>
+</head>
+<body onload="myFunction()">
+    <div id="container">
+        <header role="banner">
+            <h1 style="padding-top: 40px;">Junayed Tilock</h1>
+        </header>
+        <nav role="navigation">
+            <ul style="margin-top: 30px;">
+                <li><a class="button" href="index.html">Home</a></li> <br><br>
+                <li><a class="button" href="resume.html">Experience</a></li> <br><br>
+				<li><a id="class="dropdown"" class="button" href="professionalSkill.html">Professional Skill</a>
+					
+				
+				</li> <br>
+				<li><a class="button" href="web_skills.html">Hobbies</a></li> <br>
+                
+				<a href="index.html">
+					<img src="image/logo.png" width="50" height="50" alt="logo" style="display: block;margin: 0 auto;">
+				</a>
+            </ul>
+            
+       </nav>
+       <aside role="complementary">
+            <h3>Enter Something:</h3>
+            Will enter something in near future
+        </aside>
+       <main role="main" id="content">
+		
+			<h2>Hypothetical King’s Music Store</h2>
+
+			<form name="myForm" onsubmit="return validateForm()" 
+			action="http://infotech.scu.edu.au/cgi-bin/echo_form" method="post" target="_blank">
+				<label for="fname" >First name:</label>
+				<input type="text" id="fname" name="fname" size="60"><br><br>
+				<label for="lname">Last name:</label>
+				<input type="text" id="lname" name="lname" size="60"><br><br>
+				
+				<label for="email" >Email:</label>
+				
+				<input 
+				type="email" id="email" name="email" required size="60" /><br><br>
+				
+				<p>Please select your age:</p> <br>
+					<label for="age1">15 - 25</label>
+					<input type="radio" id="age1" name="age" value="30"><br>
+					
+					
+					<label for="age2">26 - 35</label>
+					<input type="radio" id="age2" name="age" value="60"><br>
+					 
+					
+					<label for="age3">36 - 45</label>
+					<input type="radio" id="age3" name="age" value="100"><br>
+					
+					
+					<label for="age4">46 - 55</label>
+					<input type="radio" id="age4" name="age" value="100"><br>
+					
+					<label for="age3">55+</label>
+					<input type="radio" id="age3" name="age" value="100"><br>
+					
+					
+				<p> User’s musical taste:</p> <br>
+					<label for="heavyMetal">Heavy Metal</label>
+					<input type="radio" id="heavyMetal" name="fav_music" value="heavyMetal"><br>
+					
+					<label for="western">Country and Western</label>
+					<input type="radio" id="western" name="fav_music" value="western"><br>
+					
+					
+					<label for="classical">Classical</label>
+					<input type="radio" id="classical" name="fav_music" value="classical"><br>
+					
+					<label for="rock">Rock & Roll</label>
+					<input type="radio" id="rock" name="fav_music" value="rock"><br>
+					
+					<label for="pop">Pop</label>
+					<input type="radio" id="pop" name="fav_music" value="pop"><br>
+					
+					<label for="folk">Folk</label>
+					<input type="radio" id="folk" name="fav_music" value="folk"><br>
+					
+					<label for="blues">Blues</label>
+					<input type="radio" id="blues" name="fav_music" value="blues"><br>
+					
+					<label for="jazz">Jazz</label>
+					<input type="radio" id="jazz" name="fav_music" value="jazz"><br>
+					
+					<label for="disco">Disco</label>
+					<input type="radio" id="disco" name="fav_music" value="disco"><br>
+					
+					<label for="opera">Opera</label>
+					<input type="radio" id="opera" name="fav_music" value="opera"><br>
+					
+					<label for="musicSearch">Type of music search:</label>
+					<textarea id="musicSearch" name="musicSearch" rows="3" cols="60" >
+						Enter the details of music which we are looking
+					</textarea>
+					<br><br>
+					
+
+				<br>
+				
+				
+				<input type="submit" value="Submit">
+			</form>		
+            <footer role="contentinfo"> Copyright &copy; 2022 Junayed Tilock
+                <br>
+                <h2>Contact:</h2>
+                Email: <a href="mailto:junayed@yahoo.com">Junayed@yahoo.com</a><br>
+                Phone: 0181716151<br>
+                Linkedin: <a href="https://www.linkedin.com/in/junayed-tilock-7ab496176">Junayed Tilock</a>
+            </footer>
+        </main>
+    </div>
+</body>
+  <script>
+function myFunction() {
+  alert("Welcome to the Kings Music Store - Newsletter Signup");
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
