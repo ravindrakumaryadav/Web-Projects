@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment Question 1</title>
+    <link rel="stylesheet" href="question2.css">
+  </head>
+
+  <body>
+    <p class="container">All fields are mindatory.</p>
+
+    <form action="http://www.it.murdoch.edu.au/cgi-bin/reply1.pl" id="form">
+      <div class="fieldset">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="abc xyz">
+        <p class="fieldset__message"></p>
+      </div>
+
+      <div class="fieldset">
+        <label for="tel">Phone number</label>
+        <input type="text" name="tel" id="tel" placeholder="00-0000-0000">
+        <p class="fieldset__message"></p>
+      </div>
+
+      <div class="fieldset">
+        <label for="birthdate">Birth date</label>
+        <input type="text" id="birthdate" name="birthdate" placeholder="DD/MM/YYYY">
+        <p class="fieldset__message"></p>
+      </div>
+
+      <div class="fieldset">
+        <label for="pastime">Favourite timepass</label>
+        <select name="pastime" id="pastime" class="pastime">
+          <option value="none">None</option>
+          <option value="surfing-web">Surfing the web</option>
+          <option value="playing-sport">Playing sport</option>
+          <option value="listening-music">Listening to Music</option>
+          <option value="watching-tv">Watching TV</option>
+          <option value="playing-games">Playing Games</option>
+          <option value="community-service">Community Service</option>
+          <option value="daydreaming">Daydreaming</option>
+          <option value="reading">Reading</option>
+          <option value="meditation">Meditation</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+
+  
+  <script src="question2.js"></script> 
+  
+</html>
